@@ -1,0 +1,16 @@
+[package]
+name = "rbtorrent-sys"
+version = "0.1.0"
+authors = ["Artem Vorotnikov <artem@vorotnikov.me>"]
+edition = "2021"
+license = "GPL-3.0-only WITH Classpath-exception-2.0"
+description = "C bindings to libtorrent-rasterbar"
+keywords = ["torrent", "magnet"]
+
+[dependencies]
+libc = "0.2"
+cxx = "1"
+
+[build-dependencies]
+cmake = "0.1"
+cxx-build = "1"

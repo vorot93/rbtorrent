@@ -1,0 +1,21 @@
+[package]
+name = "rbtorrent"
+version = "0.1.0"
+authors = ["Artem Vorotnikov <artem@vorotnikov.me>"]
+edition = "2021"
+license = "GPL-3.0-only WITH Classpath-exception-2.0"
+description = "Rust API for libtorrent-rasterbar"
+keywords = ["torrent", "magnet"]
+
+[workspace]
+members = ["sys"]
+
+[dependencies]
+bitflags = "1"
+cxx = "1"
+rbtorrent-sys = { path = "sys", version = "=0.1.0" }
+
+[dev-dependencies]
+anyhow = "1"
+clap = { version = "3", features = ["derive"] }
+expanded-pathbuf = "0.1"
